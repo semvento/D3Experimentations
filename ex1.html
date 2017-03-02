@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+  <p>Hello!</p>
+  <button onclick = "drawCircle()">Click me :)</button>
+</body>
+
+<script>
+  function drawCircle(){
+    d3.select("body")
+    .append("svg")
+    .attr("width", 60)
+    .attr("height", 60)
+    .append("circle")
+    .attr("cx", 30)
+    .attr("cy", 30)
+    .attr("r", 29)
+    .style("fill", "olive");
+  }
+  
+</script>
+
+</html>

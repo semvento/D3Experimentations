@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <button onclick="drawDataParagraphs()">Click me :)</button>
+</body>
+
+<script>
+  function drawDataParagraphs(){
+    let theData = [1, 2, 3]
+ 
+    d3.select("body").selectAll("p")
+    .data(theData)
+    .enter()
+    .append("p")
+    .text(function (d,i) {
+        return "i = " + i + " d = " + d
+    });
+  }
+</script>
+
+</html>

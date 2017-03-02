@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+    <p>Hello!</p>
+    <button onclick="drawCircles()">Click me :)</button>
+</body>
+
+<script>
+  function drawCircles(){
+    circleRadius = [40, 20, 10]
+    circleColors = ["green", "red", "yellow"]
+
+    var svgContainer = d3.select("body").append("svg")
+                                        .attr("width", 600)
+                                        .attr("height", 100);
+
+    var circles = svgContainer.selectAll("circle")
+                            .data(circleRadius)
+                            .enter()
+                            .append("circle")
+
+    var circleAttributes = circles
+                        .attr("cx", 50)
+                        .attr("cy", 50)
+                        .attr("r", function (d) { return d; })
+                        .style("fill", function(d, i) {
+                            return circleColors[i];
+                        });
+  }
+  
+</script>
+
+</html>
