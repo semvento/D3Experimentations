@@ -1,2 +1,8 @@
+D3 Basic related stuff:
+Ler dados externos e construir com base nisso -> https://www.dashingd3js.com/using-json-to-simplify-code
+Sintaxe dos SVG paths -> https://www.dashingd3js.com/svg-paths-and-d3js
+
+
+D3 Dendrogram related links:
 http://stackoverflow.com/questions/10247800/tree-dendrogram-with-elbow-connectors-in-d3
 http://stackoverflow.com/questions/16070150/d3-substituting-d3-svg-diagonal-with-d3-svg-line/20116569#20116569
