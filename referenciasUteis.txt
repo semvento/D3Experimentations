@@ -10,4 +10,4 @@ http://stackoverflow.com/questions/10247800/tree-dendrogram-with-elbow-connector
 http://stackoverflow.com/questions/16070150/d3-substituting-d3-svg-diagonal-with-d3-svg-line/20116569#20116569
 
 D3.js Zoom:
-https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js
+http://stackoverflow.com/questions/38459765/d3-zoom-and-pan-upgrade-to-version-4
