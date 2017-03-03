@@ -8,3 +8,6 @@ Alguns capitulos importantes para consulta após tutorial:
 D3.js Dendrogram related links:
 http://stackoverflow.com/questions/10247800/tree-dendrogram-with-elbow-connectors-in-d3
 http://stackoverflow.com/questions/16070150/d3-substituting-d3-svg-diagonal-with-d3-svg-line/20116569#20116569
+
+D3.js Zoom:
+https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js
