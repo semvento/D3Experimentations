@@ -1,0 +1,49 @@
+Tree
+tid - int
+treetype - tinyint
+name - varchar
+description - varchar
+
+Nota: Não acho que seja necessário meter uma constraint no 
+campo treetype para apenas suportar os dois valores que
+representem os dois tipos de árvore, dado que isto vai 
+ter de ser tratado na aplicação (verificar se o tipo 
+inserido é valido ou não). <- não faz sentido a aplicaçao
+servidora apenas perceber que a ação do utilizador não é
+válida quando é lhe retornado o erro da parte SQL, isto
+deve ser validado quando processamos os dados do pedido.
+----------------------------------------------------------
+Vertex
+vid - int
+tid - int
+data - varchar
+primarykey(tid, id)
+
+Nota: Primary key é constituida por tid e id, dado que
+existem N árvores, tid, e dentro duma árvore vão existir
+K vértices, chave vid.
+
+ObsVertex
+tid - int
+vid - int
+ti - bigint
+tf - bigint
+foreignkey(tid, id)
+
+Nota: O tipo bigint, pode revelar-se não ser o mais adequado,
+dado que ainda não foi decidida a maneira de representar
+as timestamps.
+----------------------------------------------------------
+Edge
+vid1 - int
+vid2 - int
+primarykey(vid1, vid2)
+
+ObsEdge
+vid1 - int
+vid2 - int
+ti - bigint
+tf - bigint
+foreignkey(vid1, vid2)
+
+Nota: a mesma nota referida anteriormente sobre as timestamps.
